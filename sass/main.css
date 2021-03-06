@@ -308,6 +308,104 @@ img {
   cursor: pointer;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.background {
+  background: #F5F5F5;
+  position: relative;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -4rem;
+  z-index: 1;
+}
+
+.pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  max-height: 34rem;
+  width: 100%;
+}
+
+.title_resto {
+  padding: 1rem 1rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.name_resto {
+  font-family: "Shrikhand", cursive;
+  font-weight: lighter;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn .btn_command {
+  color: white;
+  border: 0;
+  border-radius: 70px;
+  padding: 0.8rem 2.7rem;
+  margin: 2rem 0 5rem 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#6e37b1), to(#f55cca));
+  background-image: linear-gradient(0deg, #6e37b1, #f55cca);
+  -webkit-box-shadow: 0 0 4px #777375;
+          box-shadow: 0 0 4px #777375;
+  cursor: pointer;
+  font-weight: 500;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.btn_command:hover {
+  background-color: #f55cca;
+  -webkit-box-shadow: 0 0 8px #777375;
+          box-shadow: 0 0 8px #777375;
+  opacity: 0.9;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 footer {
   background: #363435;
 }
