@@ -1,5 +1,8 @@
-body{
-    margin: 0;
-    padding: 0;
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./composant/animations";
+@import "./layout/header";
+@import "./layout/index";
+@import "./layout/menuspages";
+@import "./layout/footer";
