@@ -1,0 +1,20 @@
+@mixin grid_restoscards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+@mixin text-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin heart-hover-before {
+    color: rgb(161, 110, 223);
+    opacity: 0.9;
+    transform: scale(1);
+    font-weight: bold;
+    cursor: pointer;
+}
