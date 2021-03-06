@@ -271,3 +271,20 @@ img{
     @include heart-hover-before;
    
 }
+
+@media all and (min-width: 980px){
+    .restaurants{
+    grid-template-columns: 1fr 1fr;
+    
+    }
+
+    .fonction{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .bouton_explore{
+
+        margin-bottom: 1rem;
+    }
+
+}    
