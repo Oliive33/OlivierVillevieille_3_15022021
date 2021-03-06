@@ -1,0 +1,39 @@
+@keyframes loader{
+   
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+}
+@keyframes flash {
+ 0%{
+     color: $color-primary;
+     text-shadow: 0 0 5px $color-primary;  
+ }
+ 50%{
+     color: $color-secondary;
+     text-shadow: 0 0 5px $color-secondary;
+     animation-timing-function: cubic-bezier(.35,.84,.8,.58);
+     // animation-timing-function: cubic-bezier(.25,.25,1);
+ }
+ 100%{
+     color: $color-tertiary;
+     text-shadow: 0 0 5px $color-tertiary ;
+ }
+}
+@keyframes repas_apparition{
+0%{
+    transform: scaley(0);
+    opacity: 0;   
+}
+50%{
+    
+    opacity: 0.5;
+}
+
+100%{
+    transform: scaley(1);
+    opacity: 1;   
+}
+
+}
