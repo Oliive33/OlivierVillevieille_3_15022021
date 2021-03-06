@@ -58,6 +58,101 @@ img{
 .coeur:hover::before{
     @include heart-hover-before;
 }
+.menus{
+    
+    padding: 0 1rem;
+    background: $color-background;
+    transition: color 0.4s ease;
+    max-width: 100%;
+    overflow: hidden;
+
+    
+    .menus:hover{
+        background: #f1e0ff;
+        transform: scale(1);
+    }
+    
+.title_menu{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 2rem 0 0 0;
+    padding-bottom: 0.3rem;
+    border: 3px $color-tertiary;
+    border-bottom-style: solid;
+    width: 37px;
+    position: relative;
+    left: 1rem;
+  }
+}
+.repas{
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    padding: 0.8rem;
+    margin: 1.4rem;
+    box-shadow: 5px 4px 8px $color-shadow;
+    animation: repas_apparition 1.5s;
+    animation-timing-function: cubic-bezier(0.29,0.91,1,1);
+    animation-fill-mode: both;
+    overflow: hidden;
+    max-width: 100%;
+}
+.text_repas{
+    @include text-overflow;
+    flex: 1; 
+        
+.title_repas{
+    margin: 0;
+    padding-bottom: 0.3rem;
+    @include text-overflow;   
+  } 
+.name_repas{
+    margin: 0;
+    @include text-overflow;
+  }
+}
+.prix{
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 0.5rem;
+}
+.repas .confirmation{    
+    background-color: $color-tertiary;
+    padding: 1rem;   
+    margin: -1rem -5rem -1.3rem 1rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.6s;      
+}
+
+ .repas:hover  .confirmation {
+    margin-right: -1rem;
+  }
+
+.repas  .icon{
+    height: 1.7rem;
+    width: 1.7rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    transform: rotate(-180deg);
+    transition-duration: 0.6s;
+}  
+
+.repas:hover .icon {
+    transform: rotate(1turn);  
+}
+  .fa-check{ 
+    color: $color-tertiary; 
+}
+
+
 
 .btn{
     display: flex;
