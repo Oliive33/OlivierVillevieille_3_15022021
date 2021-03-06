@@ -624,21 +624,6 @@ img {
   max-width: 100%;
 }
 
-.delay_group1 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.delay_group2 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.delay_group3 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
 .delay0 {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
