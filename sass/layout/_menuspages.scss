@@ -40,7 +40,24 @@ img{
     font-family: $font-title;
     font-weight: lighter;
 }
+.coeurs{
+    position: relative;
+    bottom: 0;
+    right: 1.4rem;
 
+.coeur {
+    border: 1px solid transparent;
+    font-size: x-large;
+    } 
+}
+.coeur::before {
+    content: "";
+    opacity: 1;
+    transition: color 0.4s ease-out;
+}
+.coeur:hover::before{
+    @include heart-hover-before;
+}
 
 .btn{
     display: flex;

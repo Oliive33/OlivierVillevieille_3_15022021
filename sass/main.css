@@ -369,6 +369,33 @@ img {
   font-weight: lighter;
 }
 
+.coeurs {
+  position: relative;
+  bottom: 0;
+  right: 1.4rem;
+}
+
+.coeurs .coeur {
+  border: 1px solid transparent;
+  font-size: x-large;
+}
+
+.coeur::before {
+  content: "";
+  opacity: 1;
+  -webkit-transition: color 0.4s ease-out;
+  transition: color 0.4s ease-out;
+}
+
+.coeur:hover::before {
+  color: #a16edf;
+  opacity: 0.9;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
