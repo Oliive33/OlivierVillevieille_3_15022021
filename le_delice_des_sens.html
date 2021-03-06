@@ -5,103 +5,199 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="restaurant gastromique Le délice des sens">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sass/main.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="theme-color" content="#9356dc">
         <script src="https://kit.fontawesome.com/1e5cef7426.js" crossorigin="anonymous"></script>
         <title>Le délice des sens</title>
     </head>
 
     <body>
-        <header id="logo">
-            <a href="index.html">
-                <i class="fas fa-arrow-left"></i>
-            </a> 
-            <img src="images/logo/ohmyfoodlogo.svg" alt="Ohmyfood">
+        <header class="logo">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left"></i>
+                </a> 
+                <img src="images/logo/ohmyfoodlogo.svg" alt="Ohmyfood">
         </header>
 
         <main>
-            <div class="background">
+            <div class="pictures">
                 <img src="images/le_delice_des_sens.jpg" alt="image d'un plat apétissant avec de belle couleurs">
             </div>
-            <div class="title_menu">
-            <h1>Le délice des sens</h1>
-                <i class="far fa-heart"></i>    
-            </div>
+            <div class="background">
+                <div class="title_resto">
+                    <h2 class="name_resto">Le délice des sens</h2>
+                    <div class="coeurs">
+                        <i class="far fa-heart coeur"></i>
+                    </div>    
+                </div>
 
-            <sections class="entrees">
-                <h3>ENTRÉES</h3>
-                
-                <h4>Tartare de thon</h4>
-                <p>Assaisonné au yuzu
-                    25€</p> 
+                <section class="container_menu">
+                    <div class="menus">
+                        <h3 class="title_menu">ENTRÉES</h3>
+                            
+                        <div class="repas delay_group1">
+                            <div class="text_repas">
+                                <h4 class="title_repas">Tartare de thon</h4>
+                                <p class="name_repas">Assaisonné au yuzu</p>
+                            </div>    
+                            <span class="prix">25€</span>
+                            <div class="confirmation">
+                                <div class="icon">
+                                    <i class="fas fa-check"></i>
+                                </div> 
+                            </div>
+                        </div>        
+                                
+                        <div class="repas delay_group1">
+                            <div class="text_repas">
+                                <h4 class="title_repas">Bouchée de homard croustillant</h4>
+                                <p class="name_repas">Et sa farandole de petits légumes</p>
+                            </div>    
+                            <span class="prix">35€</span>
+                            <div class="confirmation">
+                                <div class="icon">
+                                    <i class="fas fa-check"></i>
+                                </div> 
+                            </div>
+                        </div>                 
+                                    
+                        <div class="repas delay_group1">
+                            <div class="text_repas">
+                                <h4 class="title_repas">Velouté de cèpes</h4>  
+                                <p class="name_repas">Aux truffes</p>
+                            </div>    
+                            <span class="prix">20€</span>
+                            <div class="confirmation">
+                                <div class="icon">
+                                    <i class="fas fa-check"></i>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>         
+                                                    
+                    <div class="menus">
+                        <h3 class="title_menu">PLATS</h3>
+                                                        
+                        <div class="repas delay_group2">
+                            <div class="text_repas">
+                                <h4 class="title_repas">Poulet rôti aux herbes de Provence</h4>
+                                <p class="name_repas">Et sa crème de truffe</p>
+                            </div>    
+                            <span class="prix">40€</span>
+                            <div class="confirmation">
+                                <div class="icon">
+                                    <i class="fas fa-check"></i>
+                                </div> 
+                            </div>
+                        </div>        
+                                                                    
+                        <div class="repas delay_group2">
+                            <div class="text_repas">
+                                <h4 class="title_repas">Langouste rôtie</h4>
+                                <p class="name_repas">Et ses légumes de saison</p>
+                            </div>    
+                            <span class="prix">35€</span>
+                            <div class="confirmation">
+                                <div class="icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>        
+                                                                
+                        <div class="repas delay_group2">
+                            <div class="text_repas">
+                                <h4 class="title_repas">Côte de boeuf Angus</h4>
+                                <p class="name_repas">Et sa purée de panais</p>
+                            </div>    
+                            <span class="prix">44€</span>
+                            <div class="confirmation">
+                                <div class="icon">
+                                    <i class="fas fa-check"></i>
+                                </div>                                           
+                            </div>
+                        </div>
+                    </div>        
+                                                                    
+                    <div class="menus">
+                        <h3 class="title_menu">DESSERTS</h3>
+                                                                        
+                        <div class="repas delay_group3">
+                            <div class="text_repas">
+                                <h4 class="title_repas">Farandole de desserts</h4>
+                                <p class="name_repas">Du chef</p>
+                            </div>    
+                            <span class="prix">18€</span>
+                            <div class="confirmation">
+                                <div class="icon">
+                                    <i class="fas fa-check"></i>
+                                </div> 
+                            </div>
+                        </div>        
+                                                                                
+                        <div class="repas delay_group3">                                                                         
+                            <div class="text_repas">
+                                <h4 class="title_repas">Crème brulée</h4>
+                                <p class="name_repas">Revisitée</p>
+                            </div>    
+                            <span class="prix">22€</span>
+                            <div class="confirmation">
+                                <div class="icon">
+                                    <i class="fas fa-check"></i>
+                                </div> 
+                            </div>
+                        </div>        
+                                                                
+                        <div class="repas delay_group3">
+                            <div class="text_repas">
+                                <h4 class="title_repas">Tiramisu</h4>
+                                <p class="name_repas">À la noisette</p>
+                            </div>    
+                            <span class="prix">23€</span>
+                            <div class="confirmation">
+                                <div class="icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
                     
-                <h4>Bouchée de homard croustillant</h4>
-                <p>Et sa farandole de petits légumes
-                    35€</p>
+                </section>    
+                        <div class="btn">
+                            <button class="btn_command">Commander</button>
+                        </div>
 
-                <h4>Velouté de cèpes</h4>  
-                <p>Aux truffes
-                    20€</p>
-            </sections> 
-
-            <section class="plats">
-                <h3>PLATS</h3>
-
-                <h4>Poulet rôti aux herbes de Provence</h4>
-                <p>Et sa crème de truffe
-                    40€</p>
-                
-                <h4>Langouste rôtie</h4>
-                <p>Et ses légumes de saison
-                    35€</p>
-                
-                <h4>Côte de boeuf Angus</h4>
-                <p>Et sa purée de panais
-                    44€</p>
-
-            </section>
-
-            <section class="dessert">
-                <h3>DESSERTS</h3>
-
-                <h4>Farandole de desserts</h4>
-                <p>Du chef
-                    18€</p>
-                
-                <h4>Crème brulée</h4>
-                <p>Revisitée
-                    22€</p>
-                
-                <h4>Tiramisu</h4>
-                <p>À la noisette
-                    23€</p>
-
-            </section>
-
-            <div class="btn">
-                <button>Commander</button>
             </div>
-            <i class="far fa-hand-pointer"></i>
+
         </main>
 
-        <footer>
-            <h4 class="title_footer">Ohmyfood</h4>
 
-                <ul class="liste">
-                    <li>
-                        <i class="fas fa-utensils"></i>
-                        <a href="#propose">Proposer un restaurant</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-hands-helping"></i>
-                        <a href="#partenaire">Devenir partenaire</a>
-                    </li>
-                    <li>
-                        <a href="#mentions">Mentions légales</a>
-                    </li>
-                    <li>
-                        <a href="mailto:contact@ohmyfood.com">Contact</a>
-                    </li>
-                </ul>
+        <footer>
+            <div class="container_footer">
+                <h4 class="title_footer">Ohmyfood</h4>
+
+                    <ul class="liste">
+                        <li>
+                            <i class="fas fa-utensils"></i>
+                            <a class="propose_footer" href="#propose">Proposer un restaurant</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-hands-helping"></i>
+                            <a href="#partenaire">Devenir partenaire</a>
+                        </li>
+                        <li>
+                            <a href="#mentions">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@ohmyfood.com">Contact</a>
+                        </li>
+                    </ul>
+            </div>
 
         </footer>
     </body>
