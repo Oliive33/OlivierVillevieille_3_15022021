@@ -1,0 +1,218 @@
+*
+{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    max-width: 1440px;
+    font-family: $font-text;
+}
+html{
+    padding: 0.5rem 0 0 0.5rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  #ebeaea;
+    box-shadow: inset 0px 5px 11px -4px rgba(184, 183, 183, 0.8);
+    font-weight: 500;
+    padding: 0.4rem;
+
+   .fa-map-marker-alt{
+       margin-right: 1rem;
+   }
+   .local_text{
+       margin-top: 0.8rem;
+   }
+}
+.exploreur{
+    background-color: $color-background;
+    text-align: center;
+    padding: 2.3rem;
+
+   
+    .title_exploreur{
+        margin:0;
+        font-size: 23.5px;
+    }
+    .text_explored{
+       margin: 0.7rem 1.3rem 2.3rem 1.3rem;
+       display: flex;
+       justify-content: center;
+       font-weight: 300;
+    }
+} 
+.bouton_explore{
+
+    margin-bottom: 2rem;
+    
+
+    .btn_exploreur{
+        border: 0;
+        border-radius: 70px;
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+        background-image: linear-gradient(2deg
+    ,rgba(154, 95, 228, 1),rgba(247, 130, 214, 1));
+        box-shadow: 0 0 4px #777375;
+        padding: 0.85rem 1.4rem;
+        cursor: pointer;
+        transition: color 0.4s ease;
+        
+    }
+
+.btn_exploreur:hover{
+    background-color: $color-primary;
+    opacity: 0.9;
+    box-shadow: 0 0 10px #777375;
+    transform: scale(1);
+    }
+}
+.fonction{
+    display: grid;
+}
+
+.title_fonction{
+    grid-column: 1/-1;
+    padding-left: 1rem;
+    margin-top: 2.5rem;
+}
+.fonction_resto{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem;
+    background: $color-background;
+    box-shadow: 5px 4px 8px $color-shadow;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+
+    
+        span{
+        background: $color-primary;
+        border-radius:50%;
+        width:20px;
+        height:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        left: -0.60rem;
+        } 
+
+    .title_restos{
+        font-weight: 500;
+    }    
+}
+.item_menu{
+    background: $color-background;
+    transition: color 0.4s ease;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    
+ 
+ &:hover{
+     background-color: #f1e0ff;
+     transform: scale(1);
+ }
+}
+.fa-mobile-alt,.fa-list-ul,.fa-store{
+    margin: 0 1.1rem 0 1.4rem;    
+}
+.fa-mobile-alt, .fa-list-ul{
+    color: #a19d9f;
+}
+.fa-store{
+    color: $color-primary;
+}
+.title_resto{
+    font-weight: 300;
+}
+.restaurants{
+    background-color: $color-background;
+    margin-top: 3rem;
+    padding: 2.5rem 1.5rem 5rem 1.5rem;
+    @include grid_restoscards;
+}
+
+.resto_title{
+    font-size: 22px;
+    margin: 0;
+    grid-column: 1/-1;
+}
+.cards{
+
+    .restos{
+        height: 17rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 8px 4px 8px $color-shadow;
+        position: relative;
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    img{
+        height: 12.5rem;
+        width: 100%;
+        border: 0 solid transparent;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+}
+.new{
+    background-color: #9de7d5;
+    color: #1b6653;
+    padding: 0.5rem;
+    border-radius: 1px;
+    position: absolute;
+    top: 0.6rem;
+    right: 0.7rem;
+}
+
+.items_cards{
+    padding:0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text_card{
+    margin: -0.5rem 0 3rem 0.8rem;
+}
+
+.title_card{
+    margin: 0;
+    padding: 1rem 0 0 0;
+    font-size: 17px;
+}
+.name_card{
+    margin-top: 0.3rem;
+}
+ .heart {
+    
+    background-clip: border-box;
+    border: 1px solid transparent;
+    position: relative;
+    bottom: 2.3rem;
+    right: 1.4rem;
+    font-size: $font-heart-size;
+} 
+
+.heart::before {
+    content: "";
+    opacity: 1;
+    transition: color 0.4s ease-out;
+}
+.heart:hover::before{
+    @include heart-hover-before;
+   
+}
