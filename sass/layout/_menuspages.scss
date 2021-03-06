@@ -97,6 +97,64 @@ img{
     overflow: hidden;
     max-width: 100%;
 }
+.repas{
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    padding: 0.8rem;
+    margin: 1.4rem;
+    box-shadow: 5px 4px 8px $color-shadow;
+    animation: repas_apparition 1.5s;
+    animation-timing-function: cubic-bezier(0.29,0.91,1,1);
+    animation-fill-mode: both;
+    overflow: hidden;
+    max-width: 100%;
+}
+//***delay par groupes***//
+
+.delay_group1{
+    animation-delay: 0.2s;
+}
+.delay_group2{
+    animation-delay: 0.6s;
+}
+.delay_group3{
+    animation-delay: 0.9s;
+}
+
+//***delay one by one***//
+
+.delay0{
+    animation-delay: 0s;
+}
+.delay1{
+    animation-delay: 0.2s;
+}
+.delay2{
+    animation-delay: 0.4s;
+}
+.delay3{
+    animation-delay: 0.6s;
+}
+.delay4{
+    animation-delay: 0.8s;
+}
+.delay5{
+    animation-delay: 1s;
+}
+.delay6{
+    animation-delay: 1.2s;
+}
+.delay7{
+    animation-delay: 1.4s;
+}
+.delay8{
+    animation-delay: 1.6s;
+}
+.delay9{
+    animation-delay: 1.8s;
+}
+
 .text_repas{
     @include text-overflow;
     flex: 1; 

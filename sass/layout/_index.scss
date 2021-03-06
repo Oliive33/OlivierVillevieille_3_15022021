@@ -1,3 +1,58 @@
+
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(66, 65, 65, 0.95);
+    animation: loader 0.05s both;
+    animation-delay: 2.85s;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+    .lettre {
+      border-radius: 1rem;
+      font-size: 55px;
+      letter-spacing: 10px;
+      margin-bottom: 100px;
+      font-family: $font-text;
+      animation: flash 1.7s linear infinite;
+    }
+.lettre:nth-child(1){
+    animation-delay: 0s;   
+} 
+.lettre:nth-child(2){
+    animation-delay: 0.2s; 
+} 
+.lettre:nth-child(3){
+    animation-delay: 0.3s; 
+} 
+.lettre:nth-child(4){
+    animation-delay: 0.4s; 
+} 
+.lettre:nth-child(5){
+    animation-delay: 0.5s;  
+} 
+.lettre:nth-child(6){
+    animation-delay: 0.6s; 
+} 
+.lettre:nth-child(7){
+    animation-delay: 0.7s;  
+} 
+.lettre:nth-child(8){
+    animation-delay: 0.8s; 
+} 
+.lettre:nth-child(9){
+    animation-delay: 0.9s;  
+} 
+.lettre:nth-child(10){
+    animation-delay: 1s;  
+} 
+
 *
 {
     box-sizing: border-box;
