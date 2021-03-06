@@ -1,0 +1,19 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: 0.8rem 0 0.8rem 0;
+    font-family: $font-title;
+ }
+ 
+ .fa-arrow-left{
+ position: absolute;
+ left: 2rem;
+ height: 2rem;
+ top: 5%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: black;
+ font-size: 1.1rem;
+ }
+ 
