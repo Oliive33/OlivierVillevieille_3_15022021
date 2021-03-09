@@ -71,20 +71,26 @@ img{
     height: auto;
 }
 .localisation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:  #ebeaea;
-    box-shadow: inset 0px 5px 11px -4px rgba(184, 183, 183, 0.8);
-    font-weight: 500;
-    padding: 0.4rem;
-
-   .fa-map-marker-alt{
-       margin-right: 1rem;
-   }
-   .local_text{
-       margin-top: 0.8rem;
-   }
+    @include form;
+    
+    .fa-map-marker-alt, .local_text{
+        margin: 0 0.5rem 0 1.4rem;
+        font-size: 16px;
+    }
+    .local_text{
+        margin: 0.6rem 0 0.4rem 0;
+        border: 1px solid transparent;
+        padding: 0.2rem;
+        background: #ebeaea;
+        font-weight: 600;
+        transition: color 0.2s all;
+    }
+    
+    .local_text:hover{
+        border: 1px solid transparent;
+        transform: scale(1);
+        background: #fff;
+    }
 }
 .exploreur{
     background-color: $color-background;
