@@ -258,23 +258,28 @@ img{
 .name_card{
     margin-top: 0.3rem;
 }
- .heart {
+.hearts{
+    display: flex;
+    justify-content: flex-end;
     
+}
+
+.heart {
     background-clip: border-box;
     border: 1px solid transparent;
     position: relative;
-    bottom: 2.3rem;
-    right: 1.4rem;
+    bottom: 3.6rem;
+    right: 1.6rem;
     font-size: $font-heart-size;
-} 
+}  
 
 .heart::before {
     content: "";
     opacity: 1;
     transition: color 0.4s ease-out;
 }
-.heart:hover::before{
-    @include heart-hover-before;
+.heart:active::before {
+    @include heart-cover;
    
 }
 
@@ -292,5 +297,8 @@ img{
 
         margin-bottom: 1rem;
     }
-
+    .heart:hover::before{
+        @include heart-cover;
+       
+    }
 }    
