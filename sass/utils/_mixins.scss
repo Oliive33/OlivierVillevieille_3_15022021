@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 1rem;
 }
 
 @mixin text-overflow {
