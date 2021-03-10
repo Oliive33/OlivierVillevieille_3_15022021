@@ -458,12 +458,21 @@ img {
   margin-top: 0.3rem;
 }
 
+.hearts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .heart {
   background-clip: border-box;
   border: 1px solid transparent;
   position: relative;
-  bottom: 2.3rem;
-  right: 1.4rem;
+  bottom: 3.6rem;
+  right: 1.6rem;
   font-size: x-large;
 }
 
@@ -474,7 +483,7 @@ img {
   transition: color 0.4s ease-out;
 }
 
-.heart:hover::before {
+.heart:active::before {
   color: #a16edf;
   opacity: 0.9;
   -webkit-transform: scale(1);
@@ -494,6 +503,14 @@ img {
   }
   .bouton_explore {
     margin-bottom: 1rem;
+  }
+  .heart:hover::before {
+    color: #a16edf;
+    opacity: 0.9;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    font-weight: bold;
+    cursor: pointer;
   }
 }
 
@@ -576,7 +593,7 @@ img {
   transition: color 0.4s ease-out;
 }
 
-.coeur:hover::before {
+.coeur:active::before {
   color: #a16edf;
   opacity: 0.9;
   -webkit-transform: scale(1);
@@ -743,7 +760,7 @@ img {
           transition-duration: 0.6s;
 }
 
-.repas:hover .confirmation {
+.repas:active .confirmation {
   margin-right: -1rem;
 }
 
@@ -761,13 +778,13 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 70px;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-transition-duration: 0.6s;
           transition-duration: 0.6s;
 }
 
-.repas:hover .icon {
+.repas:active .icon {
   -webkit-transform: rotate(1turn);
           transform: rotate(1turn);
 }
@@ -825,6 +842,24 @@ img {
   }
   .btn {
     margin-top: 2rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .coeur:hover::before {
+    color: #a16edf;
+    opacity: 0.9;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .repas:hover .confirmation {
+    margin-right: -1rem;
+  }
+  .repas:hover .icon {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 
