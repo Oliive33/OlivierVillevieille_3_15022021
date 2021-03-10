@@ -93,7 +93,7 @@
   position: absolute;
   left: 2rem;
   height: 2rem;
-  top: 5%;
+  top: 1.9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,13 +384,13 @@ img {
 .restaurants {
   background-color: #F5F5F5;
   margin-top: 3rem;
-  padding: 2.5rem 1.5rem 5rem 1.5rem;
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-row-gap: 1rem;
 }
 
 .resto_title {
@@ -492,14 +492,16 @@ img {
   cursor: pointer;
 }
 
-@media all and (min-width: 980px) {
-  .restaurants {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
+@media all and (min-width: 768px) {
   .fonction {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  .item_menu {
+    padding: 0;
+  }
+  .title_restos {
+    font-size: 15px;
   }
   .bouton_explore {
     margin-bottom: 1rem;
@@ -511,6 +513,13 @@ img {
             transform: scale(1);
     font-weight: bold;
     cursor: pointer;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .restaurants {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -610,19 +619,19 @@ img {
 .menus {
   padding: 0 1rem;
   background: #F5F5F5;
-  -webkit-transition: color 0.4s ease;
-  transition: color 0.4s ease;
   max-width: 100%;
   overflow: hidden;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
 }
 
-.menus .menus:hover {
+.menus:hover {
   background: #f1e0ff;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.menus .title_menu {
+.title_menu {
   font-size: 15px;
   font-weight: 500;
   margin: 2rem 0 0 0;
@@ -780,8 +789,8 @@ img {
   border-radius: 70px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-transition-duration: 0.6s;
-          transition-duration: 0.6s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .repas:active .icon {
@@ -830,7 +839,7 @@ img {
           transform: scale(1);
 }
 
-@media all and (min-width: 1210px) {
+@media all and (min-width: 1024px) {
   .container_menu {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -843,9 +852,6 @@ img {
   .btn {
     margin-top: 2rem;
   }
-}
-
-@media all and (min-width: 1024px) {
   .coeur:hover::before {
     color: #a16edf;
     opacity: 0.9;
@@ -860,6 +866,21 @@ img {
   .repas:hover .icon {
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
+  }
+}
+
+@media all and (min-width: 780px) and (max-width: 1022px) {
+  .title_resto {
+    padding: 0.5rem 5rem 0 5rem;
+  }
+  .title_menu {
+    margin: 0;
+  }
+  .container_menu {
+    padding: 0.2rem 4rem 0 4rem;
+  }
+  .btn {
+    margin-top: 3rem;
   }
 }
 

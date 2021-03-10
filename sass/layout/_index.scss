@@ -181,7 +181,7 @@ img{
     
  
  &:hover{
-     background-color: #f1e0ff;
+     background-color: $color-background-survol;
      transform: scale(1);
  }
 }
@@ -200,7 +200,7 @@ img{
 .restaurants{
     background-color: $color-background;
     margin-top: 3rem;
-    padding: 2.5rem 1.5rem 5rem 1.5rem;
+    padding: 2.5rem 1.5rem 2.5rem 1.5rem;
     @include grid_restoscards;
 }
 
@@ -283,14 +283,17 @@ img{
    
 }
 
-@media all and (min-width: 980px){
-    .restaurants{
-    grid-template-columns: 1fr 1fr;
-    
-    }
-
+@media all and (min-width: 768px){
+   
     .fonction{
         grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    .item_menu{
+        padding: 0;
+    }
+    .title_restos{
+        font-size: 15px;
     }
 
     .bouton_explore{
@@ -298,7 +301,12 @@ img{
         margin-bottom: 1rem;
     }
     .heart:hover::before{
-        @include heart-cover;
-       
+        @include heart-cover; 
     }
 }    
+@media all and (min-width: 600px){
+    .restaurants{
+        grid-template-columns: 1fr 1fr;
+        
+        }
+}
