@@ -64,7 +64,7 @@ body{
     font-family: $font-text;
 }
 html{
-    padding: 0.5rem 0 0 0.5rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
 }
 img{
     max-width: 100%;
@@ -83,7 +83,7 @@ img{
         padding: 0.2rem;
         background: #ebeaea;
         font-weight: 600;
-        transition: color 0.2s all;
+        transition: color 0.2s ease;
     }
     
     .local_text:hover{

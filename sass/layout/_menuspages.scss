@@ -8,7 +8,7 @@ body{
     font-family: $font-text;
 }
 html{
-    padding: 0.5rem 0 0 0.5rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
 }
 img{
     max-width: 100%;
@@ -100,6 +100,7 @@ img{
     animation-fill-mode: both;
     overflow: hidden;
     max-width: 100%;
+    cursor: pointer;
 }
 
 //***delay one by one***//

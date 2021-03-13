@@ -203,7 +203,7 @@ body {
 }
 
 html {
-  padding: 0.5rem 0 0 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
 img {
@@ -238,8 +238,8 @@ img {
   padding: 0.2rem;
   background: #ebeaea;
   font-weight: 600;
-  -webkit-transition: color 0.2s all;
-  transition: color 0.2s all;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .localisation .local_text:hover {
@@ -536,7 +536,7 @@ body {
 }
 
 html {
-  padding: 0.5rem 0 0 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
 img {
@@ -661,6 +661,7 @@ img {
           animation-fill-mode: both;
   overflow: hidden;
   max-width: 100%;
+  cursor: pointer;
 }
 
 .delay0 {
