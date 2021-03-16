@@ -12,10 +12,12 @@
 }
 
 @mixin heart-cover {
-    color: rgb(161, 110, 223);
-    opacity: 0.9;
+    color: transparent;
+    background: linear-gradient(0deg
+    ,rgba(154, 95, 228, 1),rgba(247, 130, 214, 1));
+    -webkit-background-clip: text;
     transform: scale(1);
-    font-weight: bold;
+    font-weight: 900;
     cursor: pointer;
 }
 @mixin form {
